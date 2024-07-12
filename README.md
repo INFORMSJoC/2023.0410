@@ -48,15 +48,14 @@ and then you can either execute the notebook or the scalability test.
 
 ## Results
 
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+Figure 5 shows precision, recall, and f-measure for each scenarios
 
-![Figure 1](results/mult-test.png)
+![Figure 5](results/Performance_Workflows.png)
 
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+Figure 6 plots precision and recall over the three scenarios for Wnn and
+Wnn-sb.
 
-![Figure 1](results/sum-test.png)
+![Figure 6](results/Improvement_WorkflowNN.png)
 
 ## Replicating
 
