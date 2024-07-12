@@ -1,8 +1,6 @@
 # Datasets
 
-Due to the size of the datasets, the can't be uploaded to GitHub due to memory restrictions.
-
-To download the datasets, please run command:
+Datasets can't be uploaded to GitHub due to memory restrictions. To download the datasets, please run command in your terminal:
 
 ```bash
 
