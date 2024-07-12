@@ -48,14 +48,15 @@ and then you can either execute the notebook or the scalability test.
 
 ## Results
 
-Figure 5 shows precision, recall, and f-measure for each scenarios
 
-![Figure 5](results/Performance_Workflows.png)
+<span>
+ <img align="center" src="./results/Performance_Workflows.png" width=500/> 
+ <img align="center" src="./results/Improvement_WorkflowNN.png" width=200/> 
+ </span>
 
-Figure 6 plots precision and recall over the three scenarios for Wnn and
-Wnn-sb.
 
-![Figure 6](results/Improvement_WorkflowNN.png)
+
+
 
 ## Replicating
 
