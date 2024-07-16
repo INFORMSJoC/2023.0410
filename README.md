@@ -68,13 +68,13 @@ __Google Colab Hands-on demo:__
 
 Alternatively first run the installation and then go to `src` directory and run:
 
-- For blocking workflow: `python blocking_workflow.py --dataset 'Abt - Buy'`
-- For similarity joins workflow: `python similarity_joins_workflow.py --dataset 'Amazon - Google Products'`
-- For the NN workflow: `python nn_workflow.py --dataset 'Abt - Buy' --schema 'schema-agnostic' `
+- **Blocking workflow**: `python blocking_workflow.py --dataset 'Abt - Buy'`
+- **Similarity joins workflow: `python similarity_joins_workflow.py --dataset 'Amazon - Google Products'`
+- **NN workflow**: `python nn_workflow.py --dataset 'Abt - Buy' --schema 'schema-agnostic' `
 
 where for
 - `--dataset` flag, available values are `{'Abt - Buy', 'Amazon - Google Products', 'Wallmart - Amazon' }` and for
-- `--schema` flag {'schema-agnostic', 'schema-based'}`
+- `--schema` flag `{'schema-agnostic', 'schema-based'}`, available only for the NN workflow.
 
 For the scalability test:
 
