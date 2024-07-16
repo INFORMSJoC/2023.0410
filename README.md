@@ -33,10 +33,14 @@ Create a conda environment with Python 3.9 or 3.10:
 conda create --name product_matching_env python==3.9
 ```
 
-You can either `pip install pyjedai==0.1.7'
+You can either 
+```
+pip install pyjedai==0.1.7
+```
 
 or in the root directory
 ```
+git clone https://github.com/AI-team-UoA/pyJedAI.git
 pip install . 
 ```
 
@@ -48,7 +52,7 @@ pip install .
  <img align="center" src="./results/Improvement_WorkflowNN.png" width=200/> 
  </span>
 
-Find more in 'results' directory.
+Find more in `results` directory.
 
 
 ## Replicating
