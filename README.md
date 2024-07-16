@@ -46,13 +46,12 @@ pip install .
 
 ## Results
 
+The performance and plots used in paper of each approach can be found in `results` directory.
 
 <span>
  <img align="center" src="./results/Performance_Workflows.png" width=500/> 
  <img align="center" src="./results/Improvement_WorkflowNN.png" width=200/> 
  </span>
-
-Find more in `results` directory.
 
 
 ## Replicating
@@ -69,13 +68,15 @@ __Google Colab Hands-on demo:__
 
 Alternatively first run the installation and then go to `src` directory and run:
 
-- For blockingworkflow: `python blocking_workflow.py --dataset 'Abt - Buy'`
-- For similarity joins: `python similarity_joins_workflow.py --dataset 'Amazon - Google Products'`
-- For similarity joins: `python nn_workflow.py --dataset 'Abt - Buy' --schema 'schema-agnostic' `
+- For blocking workflow: `python blocking_workflow.py --dataset 'Abt - Buy'`
+- For similarity joins workflow: `python similarity_joins_workflow.py --dataset 'Amazon - Google Products'`
+- For the NN workflow: `python nn_workflow.py --dataset 'Abt - Buy' --schema 'schema-agnostic' `
 
-where for dataset flag, available values are `{'Abt - Buy', 'Amazon - Google Products', 'Wallmart - Amazon' }` and for schema flag `{'schema-agnostic', 'schema-based'}`
+where for
+- `--dataset` flag, available values are `{'Abt - Buy', 'Amazon - Google Products', 'Wallmart - Amazon' }` and for
+- `--schema` flag {'schema-agnostic', 'schema-based'}`
 
-and for the scalability test
+For the scalability test:
 
 ```
 python dbpedia_scalability.py
