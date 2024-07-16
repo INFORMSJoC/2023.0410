@@ -69,7 +69,7 @@ __Google Colab Hands-on demo:__
 Alternatively first run the installation and then go to `src` directory and run:
 
 - **Blocking workflow**: `python blocking_workflow.py --dataset 'Abt - Buy'`
-- **Similarity joins workflow: `python similarity_joins_workflow.py --dataset 'Amazon - Google Products'`
+- **Similarity joins workflow**: `python similarity_joins_workflow.py --dataset 'Amazon - Google Products'`
 - **NN workflow**: `python nn_workflow.py --dataset 'Abt - Buy' --schema 'schema-agnostic' `
 
 where for
