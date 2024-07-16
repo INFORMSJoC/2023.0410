@@ -28,23 +28,17 @@ focus on product entities and provide this range of Product Entity Resolution fu
 
 In Linux, to build the version used for this paper, execute the following commands.
 
-First go to `src` directory:
-```
-cd src
-```
-
 Create a conda environment with Python 3.9 or 3.10:
 ```
 conda create --name product_matching_env python==3.9
 ```
 
-Install all datasets and dependencies by executing the relevant script: 
-```
-chmod -xxx ./deps.sh
-./deps.sh
-```
+You can either `pip install pyjedai==0.1.7'
 
-and then you can either execute the notebook or the scalability test.
+or in the root directory
+```
+pip install . 
+```
 
 ## Results
 
@@ -54,8 +48,7 @@ and then you can either execute the notebook or the scalability test.
  <img align="center" src="./results/Improvement_WorkflowNN.png" width=200/> 
  </span>
 
-
-
+Find more in 'results' directory.
 
 
 ## Replicating
@@ -70,10 +63,18 @@ __Google Colab Hands-on demo:__
     </a>
 </div>
 
-Alternatively and for the scalability test first run the installation and then:
+Alternatively first run the installation and then go to `src` directory and run:
+
+- For blockingworkflow: `python blocking_workflow.py --dataset 'Abt - Buy'`
+- For similarity joins: `python similarity_joins_workflow.py --dataset 'Amazon - Google Products'`
+- For similarity joins: `python nn_workflow.py --dataset 'Abt - Buy' --schema 'schema-agnostic' `
+
+where for dataset flag, available values are `{'Abt - Buy', 'Amazon - Google Products', 'Wallmart - Amazon' }` and for schema flag `{'schema-agnostic', 'schema-based'}`
+
+and for the scalability test
 
 ```
-python scalability_test.py
+python dbpedia_scalability.py
 ```
 
 ## Ongoing Development
