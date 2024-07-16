@@ -2,8 +2,7 @@
 
 # pyJedAI: A Library with Resolution-related Structures and Procedures for Products
 
-This project is distributed in association with the [INFORMS Journal on
-Computing](https://pubsonline.informs.org/journal/ijoc) under the [Apache 2.0 License](LICENSE).
+This project is distributed in association with the [INFORMS Journal on Computing](https://pubsonline.informs.org/journal/ijoc) under the [Apache 2.0 License](LICENSE).
 
 The software and data in this repository are associated with the paper [pyJedAI: A Library with Resolution-related Structures and Procedures for Products](https://doi.org/10.1287/ijoc.2023.0410) by Ekaterini Ioannou, Konstantinos Nikoletos and George Papadakis. 
 
