@@ -1,6 +1,7 @@
 # Datasets
 
-Datasets can't be uploaded to GitHub due to memory restrictions. To download the datasets, please run command in your terminal:
+All datasets are stored in the `data` directory. Only dbpedia that was tested for scalability, should be installed from [here]() 
+
 
 ```bash
 
