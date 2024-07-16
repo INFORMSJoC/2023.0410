@@ -5,19 +5,37 @@
 This project is distributed in association with the [INFORMS Journal on
 Computing](https://pubsonline.informs.org/journal/ijoc) under the [Apache 2.0 License](LICENSE).
 
-The software and data in this repository are associated with the paper [This is a Template](https://doi.org/10.1287/ijoc.2019.0934) by T. Ralphs. 
+The software and data in this repository are associated with the paper [pyJedAI: A Library with Resolution-related Structures and Procedures for Products](https://doi.org/10.1287/ijoc.2023.0410) by T. Ralphs. 
 
 ## Version
 
 The version used in the paper is
 
-[![Release](https://img.shields.io/github/v/release/INFORMSJoC/Template?sort=semver)](https://github.com/INFORMSJoC/Template/releases)
+[![Release](https://img.shields.io/github/v/release/INFORMSJoC/Template?sort=semver)](https://github.com/AI-team-UoA/pyJedAI/releases/tag/0.1.7)
 
 ## Cite
 
-To cite this software, please cite the [paper](https://doi.org/10.1287/ijoc.2019.0934) and the software, using the following DOI.
+To cite this software, please cite the [paper](https://doi.org/10.1287/ijoc.2023.0410) and the software, using the following DOI.
 
 [![DOI](https://zenodo.org/badge/285853815.svg)](https://zenodo.org/badge/latestdoi/285853815)
+
+```
+@misc{pyjedaiProductMatching,
+  author =        {Ekaterini Ioannou, Konstantinos Nikoletos, George Papadakis},
+  publisher =     {INFORMS Journal on Computing},
+  title =         {pyJedAI: A Library with Resolution-related Structures and Procedures for Products
+},
+  year =          {2024},
+  doi =           {Put your DOI here - see above - example: 10.1287/ijoc.2023.0410.cd},
+  note =          {Available for download at https://github.com/INFORMSJoC/2023.0410},
+}
+```
+
+## Authors
+
+- [Ekaterini Ioannou](https://www.tilburguniversity.edu/staff/ekaterini-ioannou), Assistant Professor at Tilburg University, The Netherlands 
+- [Konstantinos Nikoletos](https://nikoletos-k.github.io), Research Associate at University of Athens, Greece
+- [George Papadakis](https://gpapadis.wordpress.com), Senior Researcher at University of Athens, Greece
 
 ## Description
 
