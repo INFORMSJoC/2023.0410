@@ -16,7 +16,9 @@ The version used in the paper is
 
 To cite this software, please cite the [paper](https://doi.org/10.1287/ijoc.2023.0410) and the software, using the following DOI.
 
+<!--
 [![DOI](https://zenodo.org/badge/285853815.svg)](https://zenodo.org/badge/latestdoi/285853815)
+--->
 
 ```
 @misc{pyjedaiProductMatching,
@@ -42,51 +44,61 @@ focus on product entities and provide this range of Product Entity Resolution fu
 
 ## Building
 
-In Linux, to build the version used for this paper, execute the following commands.
+In Linux, to build the version used for this paper, execute the following two steps.
 
-Create a conda environment with Python 3.9 or 3.10:
+1. Create and then activate a conda environment with Python 3.9 or 3.10:
 ```
-conda create --name product_matching_env python==3.9
+conda create --name pyJedAI_env python==3.9
+conda activate pyJedAI_env
 ```
 
-You can either 
+2. Then, install the tool using either:
 ```
 pip install pyjedai==0.1.7
 ```
 
-or in the root directory
+or in the root directory using:
 ```
 git clone https://github.com/AI-team-UoA/pyJedAI.git
 pip install . 
 ```
 
-## Results
+Please note that it requires py_stringmatching, which can be installed (before step 2)
+using command:
+```
+conda install conda-forge::py_stringmatching
+```
 
-The performance and plots used in paper of each approach can be found in `results` directory.
+## Usage
 
-<span>
- <img align="center" src="./results/Performance_Workflows.png" width=500/> 
- <img align="center" src="./results/Improvement_WorkflowNN.png" width=200/> 
- </span>
-
-
-## Replicating
-
-The simplest way to reproduce and view the results of this paper, is using the Colab notebook
-
-__Google Colab Hands-on demo:__ 
+As describe in the journal, the tool implements a comprehensive end-to-end process for realizing possible similarity relation operators. The process, shown the above figure, consists of four
+steps: 
+1. data reading,
+2. filtering,
+3. verification, and
+4. data writing and evaluation.
 
 <div align="center">
-    <a href="https://colab.research.google.com/drive/1VB_DfIT3eLXhlg6vGZSCWrJKc7AcLIpA?usp=sharing">
-        <img align="center" src="https://3.bp.blogspot.com/-apoBeWFycKQ/XhKB8fEprwI/AAAAAAAACM4/Sl76yzNSNYwlShIBrheDAum8L9qRtWNdgCLcBGAsYHQ/s1600/colab.png" width=120/> 
+  <img width="771" align="center" alt="pLibTool" src="https://github.com/user-attachments/assets/62ae3ff2-79f9-49e2-812c-4baa37571cf9">
+</div>
+
+
+### __Google Colab Hands-on demo:__ 
+
+The simplest way to reproduce and view the results of this paper, is using the Colab notebook here:     <a href="https://colab.research.google.com/drive/1VB_DfIT3eLXhlg6vGZSCWrJKc7AcLIpA?usp=sharing">
+        <img align="center" src="https://3.bp.blogspot.com/-apoBeWFycKQ/XhKB8fEprwI/AAAAAAAACM4/Sl76yzNSNYwlShIBrheDAum8L9qRtWNdgCLcBGAsYHQ/s1600/colab.png" width=80/> 
     </a>
+
+
+<div align="center">
+
 </div>
 
 Alternatively first run the installation and then go to `src` directory and run:
 
-- **Blocking workflow**: `python blocking_workflow.py --dataset 'Abt - Buy'`
-- **Similarity joins workflow**: `python similarity_joins_workflow.py --dataset 'Amazon - Google Products'`
-- **NN workflow**: `python nn_workflow.py --dataset 'Abt - Buy' --schema 'schema-agnostic' `
+- **Blocking-based workflow**: `python blocking_workflow.py --dataset 'Abt - Buy'`
+- **Similarity join-based workflow**: `python similarity_joins_workflow.py --dataset 'Amazon - Google Products'`
+- **Nearest neighbor-based workflow**: `python nn_workflow.py --dataset 'Abt - Buy' --schema 'schema-agnostic' `
 
 where for
 - `--dataset` flag, available values are `{'Abt - Buy', 'Amazon - Google Products', 'Wallmart - Amazon' }` and for
