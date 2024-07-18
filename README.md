@@ -71,6 +71,11 @@ conda install conda-forge::py_stringmatching
 
 ## Usage
 
+
+<div align="center">
+  <img width="771" align="center" alt="pLibTool" src="https://github.com/user-attachments/assets/62ae3ff2-79f9-49e2-812c-4baa37571cf9">
+</div>
+
 As describe in the journal, the tool implements a comprehensive end-to-end process for realizing possible similarity relation operators. The process, shown the above figure, consists of four
 steps: 
 1. data reading,
@@ -78,9 +83,6 @@ steps:
 3. verification, and
 4. data writing and evaluation.
 
-<div align="center">
-  <img width="771" align="center" alt="pLibTool" src="https://github.com/user-attachments/assets/62ae3ff2-79f9-49e2-812c-4baa37571cf9">
-</div>
 
 
 ### __Google Colab Hands-on demo:__ 
