@@ -22,7 +22,7 @@ To cite this software, please cite the [paper](https://doi.org/10.1287/ijoc.2023
 
 ```
 @misc{pyjedaiProductMatching,
-  author =        {Ekaterini Ioannou, Konstantinos Nikoletos, George Papadakis},
+  author =        {Ekaterini Ioannou and Konstantinos Nikoletos and George Papadakis},
   publisher =     {INFORMS Journal on Computing},
   title =         {pyJedAI: A Library with Resolution-related Structures and Procedures for Products},
   year =          {2024},
